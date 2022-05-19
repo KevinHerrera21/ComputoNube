@@ -1,0 +1,109 @@
+Con NLTK
+Puede usar NLTK (especialmente, el paquete nltk.tokenize ) para realizar la detección de límites de oraciones:
+
+import nltk
+text = "This is a test. Let's try this sentence boundary detector."
+text_output = nltk.tokenize.sent_tokenize(text)
+print('text_output: {0}'.format(text_output))
+Salida:
+
+text_output: ['This is a test.', "Let's try this sentence boundary detector."]
+Instalación o configuración
+NLTK requiere Python versiones 2.7 o 3.4+.
+
+Estas instrucciones consideran la versión de python - 3.5
+
+Mac / Unix:
+
+Instale NLTK: ejecute sudo pip install -U nltk
+Instale Numpy (opcional): ejecute sudo pip install -U numpy
+Instalación de prueba: ejecute python y escriba import nltk
+NOTA: Para versiones anteriores de Python puede ser necesario instalar setuptools (ver http://pypi.python.org/pypi/setuptools) e instalar pip (sudo easy_install pip).
+
+Windows:
+
+Estas instrucciones asumen que aún no tiene Python instalado en su máquina.
+
+Instalación binaria de 32 bits.
+
+Instale Python 3.5: http://www.python.org/downloads/ (evite las versiones de 64 bits)
+Instale Numpy (opcional): http://sourceforge.net/projects/numpy/files/NumPy/ (la versión que especifica pythnon3.5)
+Instale NLTK: http://pypi.python.org/pypi/nltk
+Instalación de prueba: Start>Python35 , luego escriba import nltk
+Instalación de software de terceros:
+
+Por favor, consulte: https://github.com/nltk/nltk/wiki/Installing-Third-Party-Software
+
+Referencia: http://www.nltk.org/install.html
+
+Función de descarga de NLTK
+Puede instalar NLTK a través de pip ( pip install nltk ). Después de su instalación, muchos componentes no estarán presentes y no podrá usar algunas de las funciones de NLTK.
+
+
+Desde su shell de Python, ejecute la función ntlk.download() para seleccionar qué paquetes adicionales desea instalar utilizando la interfaz de usuario. Alternativamente, puedes usar python -m nltk.downloader [package_name] .
+
+Para descargar todos los paquetes disponibles.
+nltk.download('all')
+Para descargar el paquete específico.
+nltk.download('package-name')
+Para descargar todos los paquetes de carpeta específica.
+import nltk
+
+dwlr = nltk.downloader.Downloader()
+
+# chunkers, corpora, grammars, help, misc, 
+# models, sentiment, stemmers, taggers, tokenizers
+for pkg in dwlr.packages():
+    if pkg.subdir== 'taggers':
+        dwlr.download(pkg.id)
+Para descargar todos los paquetes excepto Corpora Folder.
+import nltk
+
+dwlr = nltk.downloader.Downloader()
+
+for pkg in dwlr.corpora():
+    dwlr._status_cache[pkg.id] = 'installed'
+
+dwlr.download('all')
+Instalación de NLTK con Conda.
+Para instalar NLTK con anaconda / conda .
+
+Si está utilizando Anaconda, lo más probable es que nltk ya se haya descargado en la raíz (aunque es posible que aún necesite descargar varios paquetes manualmente).
+
+Usando conda :
+
+conda install nltk 
+Para actualizar nltk usando conda :
+
+conda update nltk
+Con anaconda :
+
+Si está utilizando varios entornos de python en anaconda, primero active el entorno en el que desea instalar nltk. Puede comprobar el entorno activo utilizando el comando
+
+
+conda info --envs
+El entorno con el signo * antes de la ruta del directorio es el activo. Para cambiar el uso del ambiente activo.
+
+activate <python_version>
+for eg. activate python3.5
+Ahora revise la lista de paquetes instalados en este entorno usando commnad
+
+conda list
+Si no encuentra 'nltk' en la lista, use
+
+conda install -c anaconda nltk=3.2.1
+Para más información, puede consultar https://anaconda.org/anaconda/nltk .
+
+Para instalar mini-conda aka conda : http://conda.pydata.org/docs/install/quick.html
+
+Para instalar anaconda : https://docs.continuum.io/anaconda/install
+
+Términos básicos
+Cuerpo
+Cuerpo del texto, singular. Corpora es el plural de este. Ejemplo: una colección de revistas médicas.
+
+Léxico
+Palabras y sus significados. Ejemplo: diccionario inglés. Considere, sin embargo, que varios campos tendrán diferentes léxicos. Por ejemplo: para un inversionista financiero, el primer significado para la palabra "Bull" es alguien que tiene confianza en el mercado, en comparación con el léxico común inglés, donde el primer significado para la palabra "Bull" es un animal. Como tal, existe un léxico especial para inversores financieros, médicos, niños, mecánicos, etc.
+
+Simbólico
+Cada "entidad" que forma parte de lo que se haya dividido se basa en reglas. Por ejemplo, cada palabra es un token cuando una oración se "tokeniza" en palabras. Cada oración también puede ser un token, si has tokenized las oraciones de un párrafo.
