@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómputo en la nube</title>
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../public/img/cloud-fill.svg" type="image/x-icon">
+
+    <!-- Boostrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../public/css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CDN Ploptly.js-->
+    <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Cómputo en la nube</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-clipboard2-data-fill"></i> Estudio</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="estado.html">Estado del arte</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="graficas.html">Resultados del sondeo</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="servicios.html">Exploración de servicios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-person-video3"></i> Exposiciones</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="tema1.html">Google Docs</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tema2.html">Cloud Firestore</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 servicios text-light">
+        <h1>Exploración de los servicios de un provedor</h1>
+    </div>
+
+    <div class="container p-4 my-5 bg-dark text-white lista-gsuit">
+        <h3>Google Workspace (anteriormente, G Suite)</h3>
+        <div class="list-group my-4">
+            <a href="https://workspace.google.com/products/admin/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Consola del administrador</a>
+            <a href="https://support.google.com/hangouts/answer/6127720" target="_blank" class="list-group-item list-group-item-action">Versión clásica de Hangouts</a>
+            <a href="https://edu.google.com/products/classroom/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Classroom</a>
+            <a href="https://support.google.com/a/users/answer/9310164?hl=es" target="_blank" class="list-group-item list-group-item-action">Currents</a>
+
+            <a href="https://workspace.google.com/products/gmail/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Gmail</a>
+            <a href="https://workspace.google.com/products/calendar/" target="_blank" class="list-group-item list-group-item-action">Calendario de Google</a>
+            <a href="https://workspace.google.com/products/chat/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Google Chat</a>
+            <a href="https://workspace.google.com/products/cloud-search/" target="_blank" class="list-group-item list-group-item-action">Google Cloud Search</a>
+
+            <a href="https://workspace.google.com/products/docs/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Documentos de Google</a>
+            <a href="https://workspace.google.com/products/drive/" target="_blank" class="list-group-item list-group-item-action">Google Drive</a>
+            <a href="https://workspace.google.com/products/forms/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Formularios de Google</a>
+            <a href="https://groups.google.com/my-groups" target="_blank" class="list-group-item list-group-item-action">Grupos de Google</a>
+
+            <a href="https://workspace.google.com/products/keep/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Google Keep</a>
+            <a href="https://workspace.google.com/products/meet/" target="_blank" class="list-group-item list-group-item-action">Google Meet</a>
+            <a href="https://workspace.google.com/products/sheets/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Hojas de cálculo de Google</a>
+            <a href="https://workspace.google.com/products/sites/" target="_blank" class="list-group-item list-group-item-action">Sitios de Google</a>
+
+            <a href="https://workspace.google.com/products/slides/" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Diapositivas de Google</a>
+            <a href="https://support.google.com/tasks/answer/7675772?co=GENIE.Platform=Desktop&hl=es" target="_blank" class="list-group-item list-group-item-action">Tareas de Google</a>
+            <a href="https://support.google.com/vault/answer/2462365?hl=es#:~:text=Vault%20es%20una%20herramienta%20de,los%20usuarios%20de%20Google%20Workspace." target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Google Vault</a>
+            <a href="https://voice.google.com/u/0/about" target="_blank" class="list-group-item list-group-item-action">Google Voice</a>
+
+            <a href="https://support.google.com/workspacemigrate/answer/9222862?hl=en" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Google Workspace Migrate</a>
+            <a href="https://support.google.com/a/answer/1047213?hl=es" target="_blank" class="list-group-item list-group-item-action">Asistencia de Google Workspace	</a>
+        </div>
+    </div>
+
+    <div class="container p-4 my-5 bg-primary text-white lista-gsuit">
+        <h3>Google Cloud</h3>
+        <div class="list-group my-4">
+            <a href="https://cloud.google.com/armor" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Armor</a>
+            <a href="https://cloud.google.com/asset-inventory/" target="_blank" class="list-group-item list-group-item-action">Cloud Asset Inventory</a>
+            <a href="https://cloud.google.com/billing/docs" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Billing</a>
+            <a href="https://cloud.google.com/build" target="_blank" class="list-group-item list-group-item-action">Cloud Build</a>
+
+            <a href="https://cloud.google.com/data-fusion?hl=es" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Data Fusion</a>
+            <a href="https://cloud.google.com/debugger?hl=es" target="_blank" class="list-group-item list-group-item-action">Cloud Debugger</a>
+            <a href="https://cloud.google.com/domains/docs" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Domains</a>
+            <a href="https://cloud.google.com/endpoints?hl=es" target="_blank" class="list-group-item list-group-item-action">Cloud Endpoints</a>
+
+            <a href="https://cloud.google.com/kms/docs/ekm" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud External Key Manager</a>
+            <a href="https://cloud.google.com/filestore?hl=es" target="_blank" class="list-group-item list-group-item-action">Cloud Filestore</a>
+            <a href="https://firebase.google.com/products/firestore?gclid=Cj0KCQjw3IqSBhCoARIsAMBkTb1vJAUTKjQmOILbkGW-BkzLu7gN6L4oKRaqwT8CVex4E_5DBn-V1CUaAvIUEALw_wcB&gclsrc=aw.ds" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Firestore</a>
+            <a href="https://cloud.google.com/kms/docs/hsm" target="_blank" class="list-group-item list-group-item-action">Cloud HSM</a>
+
+            <a href="https://cloud.google.com/intrusion-detection-system" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud IDS</a>
+            <a href="https://cloud.google.com/security-key-management?hl=es" target="_blank" class="list-group-item list-group-item-action">Cloud Key Management Service</a>
+            <a href="https://cloud.google.com/logging?hl=es-419" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Logging</a>
+            <a href="https://cloud.google.com/memorystore?hl=es-419" target="_blank" class="list-group-item list-group-item-action">Cloud Memorystore</a>
+
+            <a href="https://cloud.google.com/monitoring?hl=es" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Monitoring</a>
+            <a href="https://cloud.google.com/nat/docs/overview?hl=es-419#:~:text=Cloud%20NAT%20(traducci%C3%B3n%20de%20direcciones,Engine%20sin%20direcciones%20IP%20externas" target="_blank" class="list-group-item list-group-item-action">Cloud NAT</a>
+            <a href="https://cloud.google.com/natural-language?utm_source=google&utm_medium=cpc&utm_campaign=latam-MX-all-es-dr-SKWS-all-all-trial-e-dr-1011454-LUAC0014891&utm_content=text-ad-none-any-DEV_c-CRE_548115622247-ADGP_Hybrid+%7C+SKWS+-+EXA+%7C+Txt+~+AI+%26+ML_Natural-Language-KWID_43700066578948460-kwd-477477959998&utm_term=KW_cloud%20natural%20language-ST_Cloud+Natural+Language&gclid=Cj0KCQjw3IqSBhCoARIsAMBkTb16oOVwd-4KhSsUF9PIdIemvZ5PaGDSfB__C_0CxkXUP1nacfFjJ84aAicFEALw_wcB&gclsrc=aw.ds" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Natural Language API</a>
+            <a href="https://cloud.google.com/profiler?hl=es" target="_blank" class="list-group-item list-group-item-action">Cloud Profiler</a>
+
+            <a href="https://cloud.google.com/security-command-center?hl=es" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Security Command Center</a>
+            <a href="https://cloud.google.com/source-repositories/docs" target="_blank" class="list-group-item list-group-item-action">Cloud Source Repositories</a>
+            <a href="https://cloud.google.com/spanner?hl=es" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Spanner</a>
+            <a href="https://firebase.google.com/docs/storage" target="_blank" class="list-group-item list-group-item-action">Cloud Storage for Firebase</a>
+
+            <a href="https://cloud.google.com/solutions/talent-solution?hl=es" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Talent Solution - Job Search</a>
+            <a href="https://cloud.google.com/trace?hl=es" target="_blank" class="list-group-item list-group-item-action">Cloud Trace</a>
+            <a href="https://cloud.google.com/translate" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Translation</a>
+            <a href="https://cloud.google.com/vision?utm_source=google&utm_medium=cpc&utm_campaign=latam-MX-all-es-dr-BKWS-all-all-trial-e-dr-1009897-LUAC0014889&utm_content=text-ad-none-any-DEV_c-CRE_548047189087-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+AI+%26+ML_Vision-AI-KWID_43700066578950575-kwd-652567655420&utm_term=KW_google%20vision-ST_Google+Vision&gclid=Cj0KCQjw3IqSBhCoARIsAMBkTb1er5xXFMBadM8SHDfLRPVU6Mp7a1U5Le2_Arwbw-suFfBwn5KBs-waAhovEALw_wcB&gclsrc=aw.ds" target="_blank" class="list-group-item list-group-item-action">Cloud Vision</a>
+
+            <a href="https://cloud.google.com/workflows?hl=es" target="_blank" class="list-group-item list-group-item-action list-group-item-dark">Cloud Workflows</a>
+        </div>
+    </div>
+    
+    <footer class="footer bg-dark">
+        <p>Herrera Escareño Kevin Alejandro</p>
+        <p>6°B</p>
+        <p>31 de Marzo de 2022</p>
+    </footer>
+</body>
+</html>

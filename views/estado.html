@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómputo en la nube</title>
+    
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../public/img/cloud-fill.svg" type="image/x-icon">
+
+    <!-- Boostrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../public/css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CDN Ploptly.js-->
+    <script src="https://cdn.plot.ly/plotly-2.11.1.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Cómputo en la nube</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-clipboard2-data-fill"></i> Estudio</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="estado.html">Estado del arte</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="graficas.html">Resultados del sondeo</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="servicios.html">Exploración de servicios</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="bi bi-person-video3"></i> Exposiciones</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="tema1.html">Google Docs</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tema2.html">Cloud Firestore</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 estado-arte text-light">
+        <h1>Estado del arte </h1>
+        <h3>Cómputo en la nube según los autores</h3>
+    </div>
+    
+    <div class="container py-4 px-5 my-5 bg-dark text-white definiciones-computo">
+        <p>
+            <i class="bi bi-quote"></i> El cómputo en la nube es un modelo para crear acceso conveniente,
+            ubicuo y bajo demanda, vía internet, a un conjunto compartido de
+            recursos de cómputo configurables (por ejemplo, redes, servidores,
+            almacenamiento, aplicaciones y servicios), los cuales pueden ser
+            rápidamente asignados y provistos con un mínimo de gestión
+            administrativa e interacción con el proveedor. Este modelo promueve 
+            la disponibilidad; tiene cinco características esenciales, tres modelos 
+            de servicio y cuatro modelos de despliegue. <i class="bi bi-quote q2"></i> 
+        </p>
+        <p>
+            (Mell & Grance, 2011; Rastogi, 2010).
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white definiciones-computo">
+        <p>
+            <i class="bi bi-quote"></i> Se entiende al cómputo en la nube como una arquitectura
+            de red mediante la cual, datos o aplicaciones se encuentran en servidores propiedad
+            de un tercero (prestador), y a los cuales personas físicas o morales (clientes) que lo
+            tienen contratado, pueden acceder a los mismos de manera remota a través de
+            cualquier dispositivo con conexión a Internet. <i class="bi bi-quote q2"></i> 
+        </p>
+        <p>
+            (Solís, R. M. 2020, p.7).
+        </p>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white definiciones-computo">
+        <p>
+            <i class="bi bi-quote"></i> El Cómputo en la Nube es la convergencia y evolución de varios 
+            conceptos relacionados con las tecnologías de la información, como son la virtualización,
+            el cómputo móvil, el diseño de aplicaciones distribuidas o el diseño de redes, así como la 
+            gestión y suministro de aplicaciones, información y datos como un servicio. <i class="bi bi-quote q2"></i> 
+        </p>
+        <p>
+            (Oracle,2009).
+        </p>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-primary text-white referencias-computo">
+        <h4>Referencias</h4>
+        <p>Mell, P., & Grance, T. 2011. The NIST Definition of Cloud Computing. NIST. Adquirido de <a href="http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf">NIST</a></p>
+        <p>Méndez Solís, Rodrígo.(2020). Cómputo en la nube. Propuesta de un modelo de política para protección de datos personales para proveedores de servicios de cómputo en la nube. NFOTEC Centro de Investigación e Innovación en Tecnologías de la Información.</p>
+        <p>Oracle Corporation. (2009) “Architectural Strategies for Cloud Computing”. Oracle White Paper in Enterprise Architecture, California, EE.UU.</p>
+    </div>
+
+    <div class="container mt-5 estado-arte text-light">
+        <h3>Cómputo en la Nube </h3>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white investigacion-computo">
+        <h4>Definición</h4>
+        <p>
+            La computación en la nube (cloud computing, en inglés) es una tecnología que permite 
+            acceder remotamente, desde cualquier lugar y en cualquier momento, a softwares, 
+            almacenamiento de archivos y procesamiento de datos a través de Internet, sin la necesidad 
+            de conectarse a un ordenador personal o servidor local. En otras palabras, la computación 
+            en la nube utiliza la conectividad y gran escala de Internet para hospedar los más variados 
+            recursos, programas e información, y con ello permitir que el usuario ingrese a ellos través 
+            de cualquier ordenador, tablet o celular.
+        </p>
+        <p>
+            El cloud computing utiliza un servidor remoto para conectar los dispositivos de los 
+            usuarios a recursos centralizados, además de almacenar todos los datos y programas 
+            necesarios. Es posible acceder a dichos servidores mediante Internet, desde cualquier 
+            lugar, aunque estén almacenados a kilómetros de distancia.
+        </p>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white investigacion-computo">
+        <h4>Características</h4>
+        <p>
+            La computación en la nube presenta las siguientes características clave:
+        </p>
+        <ul class="investigacion-computo-lista">
+            <li>
+                <strong>Autorreparable: </strong>En caso de desperfecto, los proveedores posibilitan 
+                procesos de respaldo de información, lo cual consiste en crear una copia de seguridad 
+                automática de la última reservación de datos, por lo tanto, es prácticamente imposible 
+                que exista una pérdida de información.
+            </li>
+            <li>
+                <strong>Escalabilidad y elasticidad: </strong>Aprovisionamiento de recursos sobre una 
+                base de autoservicio casi en tiempo real, sin que los usuarios necesiten cargas de alta 
+                duración.
+            </li>
+            <li>
+                <strong>Independencia entre el dispositivo y la ubicación: </strong>Permite a los 
+                usuarios acceder a los sistemas utilizando un navegador web, independientemente de 
+                su ubicación o del dispositivo que utilice (por ejemplo, PC, teléfono móvil).
+            </li>
+            <li>
+                <strong>Virtualización: </strong>La tecnología de virtualización permite compartir 
+                servidores y dispositivos de almacenamiento. Las aplicaciones pueden ser fácilmente 
+                migradas de un servidor físico a otro.
+            </li>
+            <li>
+                <strong>Disponibilidad: </strong>El usuario no tendrá inconvenientes para acceder a 
+                la información, debido a que esta permanecerá en Internet y su acceso se permite desde 
+                cualquier dispositivo conectado en la red (previa autorización); de manera que no es 
+                necesario almacenar copias de documentos en dispositivos de almacenamiento físico.
+            </li>
+        </ul>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white investigacion-computo">
+        <h4>Tipos de despliegue en la nube</h4>
+        <p>
+            <strong>Nube pública</strong>
+        </p>
+        <p>
+            Son recursos computacionales, como servidores y almacenamiento, provistos por un tercero 
+            y disponibles a cualquier persona o empresa que desee contratarlos. En este modelo, el 
+            cliente se responsabiliza por lo que será enviado a la nube, sea una copia de seguridad, 
+            una aplicación o algunos archivos, mientras el proveedor de la nube se preocupa por la 
+            manutención, la seguridad y la gestión de todos los recursos. En la nube pública, todo está 
+            disponible en la web y se comparte entre varios usuarios que usan de manera simultánea 
+            (pero por separado), lo que hace que los recursos se mantengan estandarizados.
+        </p>
+
+        <p>
+            <strong>Nube privada</strong>
+        </p>
+        <p>
+            Las nubes privadas están en una infraestructura bajo demanda, gestionada para un solo 
+            cliente que controla qué aplicaciones deben ejecutarse y dónde. Son propietarios del 
+            servidor, red, y disco, sin mencionar que pueden decidir qué usuarios están autorizados a 
+            utilizar la infraestructura. Al administrar internamente estos servicios, las empresas 
+            tienen la ventaja de mantener la privacidad de su información y permitir unificar el 
+            acceso a las aplicaciones corporativas de sus usuarios.
+        </p>
+        
+        <p>
+            <strong>Nube híbrida</strong>
+        </p>
+        <p>
+            Una nube híbrida combina las nubes públicas y privadas, con el objetivo de compartir 
+            datos y aplicaciones. Un usuario es propietario de unas partes y comparte otras, aunque 
+            de una manera controlada. Este enfoque le aporta a la empresa más flexibilidad y más 
+            opciones de implementación.
+        </p>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white investigacion-computo">
+        <h4>Ventajas de la nube</h4>
+        <p>
+            El cloud computing trajo consigo innumerables ventajas. Optar por un servicio en nube permite:
+        </p>
+        <ul class="investigacion-computo-lista">
+            <li>
+                <strong>La reducción de costos: </strong>Los recursos en la nube suelen tener costos 
+                menores a los que un aprovisionamiento físico local podría representar, ya que elimina 
+                el gasto capital de las compras de hardware y software, instalación y manutención.
+            </li>
+            <li>
+                <strong>Agilidad: </strong>Capacidad de mejora para ofrecer recursos tecnológicos al 
+                usuario por parte del proveedor.
+            </li>
+            <li>
+                <strong>Rendimiento: </strong>Los sistemas en la nube controlan y optimizan el uso de los 
+                recursos de manera automática, dicha característica permite un seguimiento, control y 
+                notificación de este.
+            </li>
+            <li>
+                <strong>La centralización de la información: </strong>Evita que todos los datos se mantengan 
+                en distintos programas, con diferentes tipos de autenticación y formas de acceso.
+            </li>
+            <li>
+                <strong>El aumento o disminución acorde con la necesidad del cliente: </strong>Gracias a 
+                la elasticidad, se proporciona la cantidad ideal de recursos, almacenamiento y 
+                procesamientos.
+            </li>
+            <li>
+                <strong>El trabajo remoto: </strong>Los usuario pueden acceder a todos los datos a 
+                través de cualquier ordenador, notebook, tablet o smartphone que esté conectado a 
+                Internet.
+            </li>
+        </ul>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white investigacion-computo">
+        <h4>Desventajas de la nube</h4>
+        <p>
+            La exclusividad de uso de la nube tiene algunas desventajas inherentes:
+        </p>
+        <ul class="investigacion-computo-lista">
+            <li>
+                Se requiere una conexión permanente a Internet.
+            </li>
+            <li>
+                No funciona bien con conexiones de baja velocidad.
+            </li>
+            <li>
+                Riesgos a la pérdida de datos.
+            </li>
+            <li>
+                Privacidad.
+            </li>
+            <li>
+                Los costos podrían incrementarse dependiendo de las necesidades de la organización.
+            </li>
+        </ul>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-dark text-white investigacion-computo">
+        <h4>Modelos de servicio en la nube</h4>
+        <p>
+            Actualmente, la computación en la nube ofrece una amplia variedad de servicios, herramientas 
+            y funcionalidades para atender las necesidades de las empresas. Entre las principales 
+            ofertas, se destacan los modelos SaaS, Paas e IaaS.
+        </p>
+
+        <p>
+            <strong>SaaS (Software como servicio)</strong>
+        </p>
+        <p>
+            El SaaS (Software as a Service) permite acceder a un software sin comprar su licencia, 
+            utilizándolo gratuitamente desde la nube, muchas veces con recursos limitados. En este 
+            formato, la empresa accede al software por Internet, sin la necesidad de preocuparse por 
+            la instalación, configuración e inversión en licencias. Muchos CRMs y ERPs funcionan a 
+            través del SaaS. Servicios de email y otras aplicaciones públicas, como Skype, WhatsApp, 
+            LinkedIn y Facebook también trabajan con este tipo de modelo, por eso, se trata del 
+            mecanismo más popular.
+        </p>
+
+        <p>
+            <strong>PaaS (Plataforma como servicio)</strong>
+        </p>
+        <p>
+            En el PaaS (Platform as a Service), se contrata un ambiente completo de desarrollo on 
+            demand, en el que es posible crear, modificar y optimizar softwares y aplicaciones. La 
+            ventaja del modelo PaaS es que incluye sistemas operativos, herramientas de desarrollo, 
+            sistemas de gestión de bases de datos, servicios de Inteligencia Empresarial y muchos 
+            otros recursos, además de toda la infraestructura necesaria para ejecutar o perfeccionar 
+            aplicaciones web o móviles. El equipo de desarrollo sólo tiene que preocuparse por la 
+            programación de la aplicación, ya que la administración, la manutención y la actualización 
+            de la infraestructura quedan a cargo del proveedor.
+        </p>
+
+        <p>
+            <strong>IaaS (Infraestructura como servicio)</strong>
+        </p>
+        <p>
+            En el modelo IaaS (Infrastructure as a Service), se alquilan recursos de infraestructura, 
+            como servidores, routers, racks, datacenters, hardware y demás herramientas que posibilitan 
+            la transmisión y el almacenamiento de datos. En dicho modelo se utiliza lo que es necesario 
+            según la demanda de la empresa y se paga solamente lo que se usa. La gran ventaja de este 
+            modelo es su escalabilidad. Después de todo, en un mes, es posible requerir algunos 
+            servidores virtuales donde se almacenarán pocos datos y se tendrá poco tráfico, mientras 
+            que, al mes siguiente, se puede pedir el doble de recursos.
+        </p>
+    </div>
+
+    <div class="container py-4 px-5 my-5 bg-primary text-white referencias-computo">
+        <h4>Referencias</h3>
+        <p>Grapsas, T. (2018, 16 septiembre). ¿Qué es cloud computing o computación en la nube? Conoce sobre el término a continuación. Rock Content - ES. Recuperado 04 de abril de 2022, de <a href="https://rockcontent.com/es/blog/computacion-en-la-nube/" target="_blank">Rock Content</a>.</p>
+        <p>Cisco. (2020, 9 noviembre). ¿Qué es la computación en nube? Recuperado 04 de abril de 2022, de <a href="https://www.cisco.com/c/es_mx/solutions/cloud/what-is-cloud-computing.html" target="_blank">Cisco</a>.</p>
+        <p>Martínez Godínez, F. C., & Gutiérrez Galán, B. V. (2010, 11 noviembre). Cómputo en Nube: Ventajas y Desventajas | Revista .Seguridad. Universidad Nacional Autónoma de México. Recuperado 4 de abril de 2022, de <a href="https://revista.seguridad.unam.mx/numero-08/computo-en-nube-ventajas-y-desventajas" target="_blank">.Seguridad</a>.</p>
+    </div>
+
+    <footer class="footer bg-dark">
+        <p>Herrera Escareño Kevin Alejandro</p>
+        <p>6°B</p>
+        <p>31 de Marzo de 2022</p>
+    </footer>
+</body>
+</html>
